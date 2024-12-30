@@ -1,7 +1,10 @@
 const elementoParaInserirLivros = document.getElementById('livros');
 
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis');
+
 function exibirOsLivrosnaTela(listaDeLivros) {
 
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = '';
     elementoParaInserirLivros.innerHTML = ''; //aparecer apenas o que a gnt filtrar
 
     listaDeLivros.forEach(livro => {
